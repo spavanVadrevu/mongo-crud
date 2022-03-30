@@ -1,0 +1,4 @@
+function del(id){
+	console.log("hi")
+	console.log(id);
+}

@@ -1,0 +1,28 @@
+html
+	body
+		a(href="insert.html") Add New Unicorn
+		br
+		br
+		table(border="2")
+			thead
+				th Id
+				th Name
+				th DOB
+				th Loves
+				th Weight
+				th Gender
+				th Vampires
+				th(colspan=2) Operations
+			tbody
+				each unicorn in unicorns
+					tr
+						td=unicorn._id
+						td=unicorn.name
+						td=unicorn.dob
+						td=unicorn.loves
+						td=unicorn.weight
+						td=unicorn.gender
+						td=unicorn.vampires
+						td
+							a(href="/delete/"+unicorn._id) delete
+						

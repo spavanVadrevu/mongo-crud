@@ -1,0 +1,10 @@
+html
+	body
+		form(action="/update/"+id name="f")
+			input(type="text" placeholder="Id" name="id" value=id)
+			input(type="text" placeholder="Name" name="name" value=unicorns.name)
+			input(type="text" placeholder="Loves" name="loves" value=unicorns.loves.toString())
+			input(type="text" placeholder="Weight" name="weight" value=unicorns.weight)
+			input(type="text" placeholder="Gender" name="gender" value=unicorns.gender)
+			input(type="text" placeholder="Vampires" name="vampires" value=unicorns.vampires)
+			button update
